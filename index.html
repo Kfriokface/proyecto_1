@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>E-Commerce</title>
+<!-- Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<!-- Icons -->
+<script src="https://kit.fontawesome.com/cfc6f3bbbd.js" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@40,300,0,-25" />
+<!-- Css -->
+<link rel="stylesheet" href="libraries/css/Best-CSS-Reset-2024/css_reset.css">
+<link rel="stylesheet" href="theme/ecommerce/css/theming.css">
+<link rel="stylesheet" href="theme/ecommerce/css/styles.css">
+</head>
+<body>
+  
+<header class="ec-hd">
+  <div class="ec-hd__promo bg-dark white p-relative">
+    <div class="ec-hd__promo--wrapper max-width d-flex">
+      <div class="ec-hd__promo--bf white"><span class="fw-700 bg-warning dark">Black</span>Friday</div>
+      <div class="ec-hd__promo--ds d-flex">Hasta el <span class="fs-md warning">59%</span> de descuento</div>
+      <div class="ec-hd__promo--bt">
+        <button class="btn bg-warning dark">Compra ya <i class="fa-solid fa-arrow-right fa-fw" aria-hidden="true"></i></button>
+      </div>
+    </div>
+    <button class="ec-hd__promo--close btn p-absolute--y50r0"><i class="fa-solid fa-xmark white" aria-label="Cerrar"></i></button>
+  </div>
+  <div class="ec-hd__content bg-blue white">
+    <div class="content--up max-width d-flex">
+      <h1 class="content--up__title fw-300 fs-sm">Bienvenidos a la tienda online de Alberto Sancho</h1>
+      <div class="content--up__sc d-flex">
+        <p class="fs-sm">Síguenos:</p>
+        <ul class="d-flex">
+          <li><a href="/" class="white"><i class="fa-brands fa-facebook" aria-label="Facebook"><span class="hidden">Facebook</span></i></a></li>
+          <li><a href="/" class="white"><i class="fa-brands fa-x-twitter" aria-label="Twitter"><span class="hidden">Twitter</span></i></a></li>
+          <li><a href="/" class="white"><i class="fa-brands fa-pinterest" aria-label="Pinterest"><span class="hidden">Pinterest</span></i></a></li>
+          <li><a href="/" class="white"><i class="fa-brands fa-instagram" aria-label="Instagram"><span class="hidden">Instagram</span></i></a></li>
+          <li><a href="/" class="white"><i class="fa-brands fa-youtube" aria-label="Youtube"><span class="hidden">Youtube</span></i></a></li>
+        </ul>
+      </div>
+      <form id="settings" class="content--up__st fs-sm fw-300 white" action="/">
+        <select name="language" id="lang">
+          <option value="es">Esp</option>
+          <option value="en">Eng</option>
+          <option value="po">Por</option>
+          <option value="fr">Fra</option>
+        </select>
+        <select name="currency" id="currency">
+          <option value="euro">EUR</option>
+          <option value="pound">GBP</option>
+          <option value="dollar">USD</option>
+        </select>
+      </form>
+    </div>
+    <div class="content--dw max-width d-flex">
+      <figure class="ec-header__logo">
+        <img src="assets/images/logo_AS.svg" alt="Logotipo de Alberto Sancho" width="200" height="67">
+      </figure>
+      <div class="ec-header__search bg-white d-flex">
+        <form id="search" action="/">
+          <input type="search" placeholder="Buscar...">      
+        </form>
+        <i class="fa-solid fa-magnifying-glass fa-lg blue"></i>
+      </div>
+      <div class="ec-header__icons d-flex white">
+        <span class="material-symbols-outlined">shopping_cart</span>
+        <span class="material-symbols-outlined">favorite</span>
+        <span class="material-symbols-outlined">person</span>
+      </div>
+    </div>
+  </div>
+</header>
+<nav class="ec-main-nav d-flex max-width padding-y">
+  <form id="categories" class="ec-main-nav__nav fs-sm fw-600" action="/">
+    <select name="categories">
+      <option value="all">Todas las categorías</option>
+      <option value="computer">Ordenadores</option>
+      <option value="components">Componentes</option>
+      <option value="phones">Teléfonos</option>
+      <option value="gaming">Videoconsolas</option>
+      <option value="tv">Televisores</option>
+      <option value="home">Hogar</option>
+    </select>
+  </form>
+  <ul class="d-flex fs-sm">
+    <li><a href="/" class="d-flex dark"><span class="material-symbols-outlined">location_on</span>Estado del pedido</a></li>
+    <li><a href="/" class="d-flex dark"><span class="material-symbols-outlined">compare_arrows</span>Comparar</a></li>
+    <li><a href="/" class="d-flex dark"><span class="material-symbols-outlined">support_agent</span>Att. al cliente</a></li>
+    <li><a href="/" class="d-flex dark"><span class="material-symbols-outlined">info</span>Información</a></li>
+  </ul>
+  <p class="d-flex fw-600 fs-sm"><span class="material-symbols-outlined">phone_in_talk</span>+34 912 345 678</p>
+</nav>
+<div id="page" class="max-width">
+  <section id="main">
+    <div class="ec-slider d-grid">
+      <article class="ec-slider__1 bg-grey d-flex">
+        <div class="text-wrapper padding-l d-flex">
+          <h5 class="blue uppercase">Juega sin parar</h5>
+          <h2 class="fs-lg">Consolas Xbox</h2>
+          <p>Ahorra hasta un 50% en videjuegos para Xbox. Por 3€ amplia la garantía 3 años más</p>
+          <button class="btn bg-orange white uppercase">Compra ya <i class="fa-solid fa-arrow-right fa-fw" aria-hidden="true"></i></button>
+          <nav class="pager">
+            <ul class="d-flex">
+              <li><a href="#" class="active"></a><span class="hidden">1</span></li>
+              <li><a href="#"><span class="hidden">2</span></a></li>
+              <li><a href="#"><span class="hidden">3</span></a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="image padding-l">
+          <figure class="p-relative">
+            <img src="/assets/images/xbox_360.png" alt="Xbox 360">
+            <span class="price d-flex p-absolute bg-blue white padding-xl">299€</span>
+          </figure>
+        </div>
+      </article>
+      <article class="ec-slider__2 bg-dark d-flex">
+        <div class="text-wrapper d-flex padding-l">
+          <h4 class="fs-sm fw-300 uppercase warning">Novedad</h4>
+          <h3 class="fw-400 white">Nuevo Google Pixel 6 Pro</h3>
+          <button class="btn bg-orange white uppercase fs-sm">Compra ya <i class="fa-solid fa-arrow-right fa-fw" aria-hidden="true"></i></button>
+        </div>
+        <div class="image d-flex p-relative">
+          <span class="fs-sm fw-700 p-absolute bg-warning dark uppercase padding-xs">29% descuento</span>
+          <figure>
+            <img src="/assets/images/smartphone.png" alt="Smartphone">
+          </figure>
+        </div>
+      </article>
+      <article class="ec-slider__3 bg-grey d-flex">
+        <div class="image">
+          <figure>
+            <img src="/assets/images/buds.png" alt="Auriculares">
+          </figure>
+        </div>
+        <div class="text-wrapper d-flex padding-l">
+          <h3 class="fs-md">Xiaomi FlipsBuds Pro</h3>
+          <h4 class="blue">199€</h4>
+          <button class="btn bg-orange white uppercase fs-sm">Compra ya <i class="fa-solid fa-arrow-right fa-fw" aria-hidden="true"></i></button>
+        </div>
+      </article>
+    </div> 
+    <div class="ec-benefits d-flex padding-y">
+      <div class="caja d-flex">
+        <svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill="#333"><path d="M454.87-163.03v-302.71L190.26-618.77v295.8q0 3.07 1.53 5.76 1.54 2.7 4.62 4.62l258.46 149.56Zm50.26 0 258.46-149.56q3.08-1.92 4.62-4.62 1.53-2.69 1.53-5.76v-296.21L505.13-465.74v302.71Zm-56.41 54.23L171.28-268.82q-14.77-8.36-23.02-22.92-8.26-14.57-8.26-31.29v-313.94q0-16.72 8.26-31.29 8.25-14.56 23.02-22.92L448.72-851.2q14.77-8.36 31.28-8.36t31.28 8.36l277.44 160.02q14.77 8.36 23.02 22.92 8.26 14.57 8.26 31.29v313.94q0 16.72-8.26 31.29-8.25 14.56-23.02 22.92L511.28-108.8q-14.77 8.36-31.28 8.36t-31.28-8.36Zm187.41-490.74 105.08-60.66-255.06-147.57q-3.07-1.67-6.15-1.67-3.08 0-6.15 1.67L375.36-751l260.77 151.46ZM480-508.51l105.72-61.69L324.1-721.23 218.38-660.2 480-508.51Z"/></svg>
+        <div>
+          <p class="fs-sm fw-600 uppercase">Envío rápido</p>
+          <p class="fs-sm">Entrega en 24H</p>
+        </div>
+      </div>
+      <span class="separator"></span>
+      <div class="caja d-flex">
+        <svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill="#333"><path d="M316.36-140v-50.26h138.51v-148.72q-53.23-10.23-94-45.28t-56.41-87.13q-68.82-7.82-116.64-56.12Q140-575.82 140-643.79v-42.16q0-20.49 14.76-35.37 14.75-14.88 35.5-14.88h104.72V-820h370.04v83.8h104.72q20.75 0 35.5 14.88Q820-706.44 820-685.95v42.16q0 67.97-47.82 116.28-47.82 48.3-116.64 56.12-15.64 52.08-56.41 87.13-40.77 35.05-94 45.28v148.72h138.51V-140H316.36Zm-21.38-384.62v-161.33H190.26v42.16q0 44.97 29.95 78.11 29.94 33.14 74.77 41.06ZM480-387.44q56.08 0 95.04-39.16Q614-465.77 614-521.85v-247.89H346v247.89q0 56.08 38.96 95.25 38.96 39.16 95.04 39.16Zm185.02-137.18q44.83-7.92 74.77-41.06 29.95-33.14 29.95-78.11v-42.16H665.02v161.33ZM480-578.79Z"/></svg>
+        <div>
+          <p class="fs-sm fw-600 uppercase">3 días de prueba</p>
+          <p class="fs-sm">Garantía de devolución del 100% del importe</p>
+        </div>
+      </div>
+      <span class="separator"></span>
+      <div class="caja d-flex">
+        <svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill="#333"><path d="M860-717.43v474.86q0 25.79-18.39 44.18T797.43-180H162.57q-25.79 0-44.18-18.39T100-242.57v-474.86q0-25.79 18.39-44.18T162.57-780h634.86q25.79 0 44.18 18.39T860-717.43Zm-709.74 98.05h659.48v-98.05q0-4.62-3.84-8.47-3.85-3.84-8.47-3.84H162.57q-4.62 0-8.47 3.84-3.84 3.85-3.84 8.47v98.05Zm0 112.4v264.41q0 4.62 3.84 8.47 3.85 3.84 8.47 3.84h634.86q4.62 0 8.47-3.84 3.84-3.85 3.84-8.47v-264.41H150.26Zm0 276.72v-499.48 499.48Z"/></svg>
+        <div>
+          <p class="fs-sm fw-600 uppercase">Pago Seguro</p>
+          <p class="fs-sm">Su dinero está asegurado</p>
+        </div>
+      </div>
+      <span class="separator"></span>
+      <div class="caja d-flex">
+        <svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill="#333"><path d="M325.84-140H202.57q-25.79 0-44.18-18.39T140-202.57V-480q0-70.77 26.77-132.61 26.77-61.85 72.77-107.85 46-46 107.85-72.77Q409.23-820 480-820q70.77 0 132.61 26.77 61.85 26.77 107.85 72.77 46 46 72.77 107.85Q820-550.77 820-480v277.43q0 25.79-18.39 44.18T757.43-140H634.16v-271.43h135.58V-480q0-121.07-84.32-205.41-84.33-84.33-205.39-84.33-121.06 0-205.42 84.33-84.35 84.34-84.35 205.41v68.57h135.58V-140Zm-50.25-221.18h-85.33v158.61q0 4.62 3.84 8.47 3.85 3.84 8.47 3.84h73.02v-170.92Zm408.82 0v170.92h73.02q4.62 0 8.47-3.84 3.84-3.85 3.84-8.47v-158.61h-85.33Zm-408.82 0h-85.33 85.33Zm408.82 0h85.33-85.33Z"/></svg>
+        <div>
+          <p class="fs-sm fw-600 uppercase">Soporte 24/7</p>
+          <p class="fs-sm">Chat Live/Whatsapp</p>
+        </div>
+      </div>          
+    </div>
+  </section>
+  <section id="deals">
+    <div class="max-width">
+      <div>
+        <h2>Ofertas destacadas</h2>
+        <div></div>
+        <button>Ver todas</button>
+      </div>
+      <div class="d-grid">
+        <article class="padding">
+          <figure><img src="/assets/images/ps4.jpg" alt="PS5"></figure>
+          <div class="stars"></div>
+          <h3>Xbox Series S - 512GB SSD Console with Wireless Controller - EU Versio...</h3>
+          <div>865€</div>
+          <div>442€</div>
+          <p>Games built using the Xbox Series X|S development kit showcase unparalleled load times, visuals.</p>
+          <div>
+            <div></div>
+            <button>Compra ya</button>
+            <div></div>
+          </div>
+        </article>
+        <article class="padding">
+          <figure><img src="/assets/images/otrodron.jpg" alt="">img</figure>
+          <h3>Bose Sport Earbuds - Wireless Earphones - Bluetooth In Ear...</h3>
+          <div>2300€</div>
+        </article>
+        <article class="padding">
+          <figure><img src="/assets/images/iphone.jpg" alt=""></figure>
+          <h3>Simple Mobile 4G LTE Prepaid Smartphone</h3>
+          <div>220€ </div>
+        </article>
+        <article class="padding">
+          <figure><img src="/assets/images/gamepad.jpg" alt=""></figure>
+          <h3>4K UHD LED Smart TV with Chromecast Built-in</h3>
+          <div>865€</div>
+          <div>15€</div>
+        </article>
+        <article class="padding">
+          <figure><img src="/assets/images/headphones.jpg" alt=""></figure>
+          <h3>Sony DSCHX8 High Zoom Point & Shoot Camera</h3>
+          <div>1200€</div>
+        </article>
+        <article class="padding">
+          <figure><img src="/assets/images/phone.jpg" alt=""></figure>
+          <h3>Dell Optiplex 7000x7480 All-in-One Computer Monitor</h3>
+          <div>299€</div>
+        </article>
+        <article class="padding">
+          <figure><img src="/assets/images/dron.jpg" alt=""></figure>
+          <h3>Portable Wshing Machine, 11lbs capacity Model 18NMFIAM</h3>
+          <div>800€</div>
+          <div>70€</div>
+        </article>
+        <article class="padding">
+          <figure><img src="/assets/images/imac.jpg" alt=""></figure>
+          <h3>2-Barrel Carburetor Carb 2100 Engine Increase Horsepower</h3>
+          <div>160€</div>
+        </article>
+        <article class="padding">
+          <figure><img src="/assets/images/cam.jpg" alt=""></figure>
+          <h3>JBL FLIP 4 - Waterproof Portable Bluetooth Speaker - Black</h3>
+          <div>360€</div>
+          <div>250€</div>
+        </article>
+      </div>
+    </div>
+  </section>
+</div>
+
+<section id="news" class="ec-news bg-grey padding-y--xl">
+  <h2 class="padding-y">Últimas noticias</h2>
+  <div class="ec-news__wrapper max-width d-flex ">
+    <article class="bg-white padding-l">
+      <figure>
+        <img src="assets/images/new_1.jpg" alt="Smartwatch">
+      </figure>
+      <div class="info d-flex fs-sm padding-y">
+        <div class="d-flex">
+          <span class="material-symbols-outlined orange">account_circle</span>
+          <p>Pedro</p>
+        </div>
+        <div class="d-flex">
+          <span class="material-symbols-outlined orange">calendar_today</span>
+          <p>19 Dic,2023</p>
+        </div>
+        <div class="d-flex">
+          <span class="material-symbols-outlined orange">reviews</span>
+          <p>453</p>
+        </div>
+      </div>
+      <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
+      <p class="padding-y fs-base">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque, animi ipsa quas corrupti laudantium sit similique omnis maxime non doloribus aliquid error soluta nesciunt laboriosam unde ea necessitatibus dolore fuga!</p>
+      <button class="btn2">Leer más <i class="fa-solid fa-arrow-right fa-fw" aria-hidden="true"> </i></button>
+    </article>
+    <article class="bg-white padding-l">
+      <figure>
+        <img src="assets/images/new_2.jpg" alt="Smartwatch">
+      </figure>
+      <div class="info d-flex fs-sm padding-y">
+        <div class="d-flex">
+          <span class="material-symbols-outlined orange">account_circle</span>
+          <p>Teresa</p>
+        </div>
+        <div class="d-flex">
+          <span class="material-symbols-outlined orange">calendar_today</span>
+          <p>24 Jun,2023</p>
+        </div>
+        <div class="d-flex">
+          <span class="material-symbols-outlined orange">reviews</span>
+          <p>1043</p>
+        </div>
+      </div>
+      <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
+      <p class="padding-y fs-base">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque, animi ipsa quas corrupti laudantium sit similique omnis maxime non doloribus aliquid error soluta nesciunt laboriosam unde ea necessitatibus dolore fuga!</p>
+      <button class="btn2">Leer más <i class="fa-solid fa-arrow-right fa-fw" aria-hidden="true"> </i></button>
+    </article>
+    <article class="bg-white padding-l">
+      <figure>
+        <img src="assets/images/new_3.jpg" alt="Smartwatch">
+      </figure>
+      <div class="info d-flex fs-sm padding-y">
+        <div class="d-flex">
+          <span class="material-symbols-outlined orange">account_circle</span>
+          <p>Alberto</p>
+        </div>
+        <div class="d-flex">
+          <span class="material-symbols-outlined orange">calendar_today</span>
+          <p>05 May,2023</p>
+        </div>
+        <div class="d-flex">
+          <span class="material-symbols-outlined orange">reviews</span>
+          <p>247</p>
+        </div>
+      </div>
+      <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
+      <p class="padding-y fs-base">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque, animi ipsa quas corrupti laudantium sit similique omnis maxime non doloribus aliquid error soluta nesciunt laboriosam unde ea necessitatibus dolore fuga!</p>
+      <button class="btn2">Leer más <i class="fa-solid fa-arrow-right fa-fw" aria-hidden="true"> </i></button>
+    </article>
+  </div>
+</section>
+
+<section id="subscribe" class="ec-subscribe bg-blue white padding-y">
+  <div class="ec-subscribe__wrapper padding-y">
+    <h2 class="fs-lg fw-400">Suscribete a nuestro boletin</h2>
+    <p class="padding-y fw-300">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero reprehenderit qui voluptate exercitationem incidunt quos soluta maxime animi corrupti facere voluptas culpa esse tempore nam, ipsum eum unde delectus cumque.</p>
+    <div class="d-flex bg-white padding margin-xl">
+      <form action="">
+        <input type="email" name="" id="" placeholder="Email">
+      </form>
+      <button class="btn bg-orange white uppercase">Suscríbete <i class="fa-solid fa-arrow-right fa-fw" aria-hidden="true"></i></button>
+    </div>
+    <div class="brands d-flex padding margin">
+      <figure><img src="/assets/images/google.svg" alt="Google"></figure>
+      <figure><img src="/assets/images/amazon.svg" alt="Amazon"></figure>
+      <figure><img src="/assets/images/phillips.svg" alt="Phillips"></figure>
+      <figure><img src="/assets/images/samsung.svg" alt="Samsung"></figure>
+      <figure><img src="/assets/images/toshiba.svg" alt="Toshiba"></figure>
+    </div>
+  </div>
+</section>
+<footer></footer>
+
+
+</body>
+</html>
