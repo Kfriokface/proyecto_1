@@ -74,27 +74,27 @@
     </div>
   </div>
 </header>
-<nav class="ec-main-nav d-flex max-width padding-y">
-  <form id="categories" class="ec-main-nav__nav fs-sm fw-600" action="/">
-    <select name="categories">
-      <option value="all">Todas las categorías</option>
-      <option value="computer">Ordenadores</option>
-      <option value="components">Componentes</option>
-      <option value="phones">Teléfonos</option>
-      <option value="gaming">Videoconsolas</option>
-      <option value="tv">Televisores</option>
-      <option value="home">Hogar</option>
-    </select>
-  </form>
-  <ul class="d-flex fs-sm">
-    <li><a href="/" class="d-flex dark"><span class="material-symbols-outlined">location_on</span>Estado del pedido</a></li>
-    <li><a href="/" class="d-flex dark"><span class="material-symbols-outlined">compare_arrows</span>Comparar</a></li>
-    <li><a href="/" class="d-flex dark"><span class="material-symbols-outlined">support_agent</span>Att. al cliente</a></li>
-    <li><a href="/" class="d-flex dark"><span class="material-symbols-outlined">info</span>Información</a></li>
-  </ul>
-  <p class="d-flex fw-600 fs-sm"><span class="material-symbols-outlined">phone_in_talk</span>+34 912 345 678</p>
-</nav>
 <div id="page" class="max-width">
+  <nav class="ec-main-nav d-flex padding-y">
+    <form id="categories" class="ec-main-nav__nav fs-sm fw-600" action="/">
+      <select name="categories">
+        <option value="all">Todas las categorías</option>
+        <option value="computer">Ordenadores</option>
+        <option value="components">Componentes</option>
+        <option value="phones">Teléfonos</option>
+        <option value="gaming">Videoconsolas</option>
+        <option value="tv">Televisores</option>
+        <option value="home">Hogar</option>
+      </select>
+    </form>
+    <ul class="d-flex fs-sm">
+      <li><a href="/" class="d-flex dark"><span class="material-symbols-outlined">location_on</span>Estado del pedido</a></li>
+      <li><a href="/" class="d-flex dark"><span class="material-symbols-outlined">compare_arrows</span>Comparar</a></li>
+      <li><a href="/" class="d-flex dark"><span class="material-symbols-outlined">support_agent</span>Att. al cliente</a></li>
+      <li><a href="/" class="d-flex dark"><span class="material-symbols-outlined">info</span>Información</a></li>
+    </ul>
+    <p class="d-flex fw-600 fs-sm"><span class="material-symbols-outlined">phone_in_talk</span>+34 912 345 678</p>
+  </nav>
   <section id="main">
     <div class="ec-slider d-grid">
       <article class="ec-slider__1 bg-grey d-flex">
@@ -178,69 +178,84 @@
       </div>          
     </div>
   </section>
-  <section id="deals">
-    <div class="max-width">
-      <div>
+  <section id="deals" class="padding-y--xl margin-y--xl">
+    <div class="ec-deals max-width">
+      <div class="ec-deals__header d-flex padding-y">
         <h2>Ofertas destacadas</h2>
-        <div></div>
-        <button>Ver todas</button>
+        <div class="date">Fin de la oferta: <span class="padding-s bg-warning" >15d: 8h: 23m :15s</span></div>
+        <button class="btn lightblue">Ver todas las ofertas<i class="fa-solid fa-arrow-right fa-fw" aria-hidden="true"></i></button>
       </div>
-      <div class="d-grid">
-        <article class="padding">
-          <figure><img src="/assets/images/ps4.jpg" alt="PS5"></figure>
-          <div class="stars"></div>
-          <h3>Xbox Series S - 512GB SSD Console with Wireless Controller - EU Versio...</h3>
-          <div>865€</div>
-          <div>442€</div>
-          <p>Games built using the Xbox Series X|S development kit showcase unparalleled load times, visuals.</p>
-          <div>
-            <div></div>
-            <button>Compra ya</button>
-            <div></div>
+      <div class="ec-deals__deals d-grid">
+        <article class="padding d-flex">
+          <figure><img src="/assets/images/ps4.jpg" alt="Xbox Series S"></figure>
+          <div class="stars">
+            <i class="fa-solid fa-star warning" aria-hidden="true"></i>
+            <i class="fa-solid fa-star warning" aria-hidden="true"></i>
+            <i class="fa-solid fa-star warning" aria-hidden="true"></i>
+            <i class="fa-solid fa-star warning" aria-hidden="true"></i>
+            <i class="fa-solid fa-star warning" aria-hidden="true"></i>
+            <span class="gray fs-sm">(12.285)</span>
+          </div>
+          <h3 class="fs-base fw-600">Xbox Series S - 512GB SSD Console with Wireless Controller - EU Versio...</h3>
+          <div class="price">
+            <span class="before">865€</span>
+            <span>442€</span>
+          </div> 
+          <p class="fs-sm">Games built using the Xbox Series X|S development kit showcase unparalleled load times, visuals.</p>
+          <div class="add-to-cart d-flex">
+            <span class="d-flex material-symbols-outlined">favorite</span>
+            <button class="btn white bg-orange"><span class="material-symbols-outlined">shopping_cart</span>Compra ya</button>
+            <span class="d-flex material-symbols-outlined">visibility</span>
           </div>
         </article>
-        <article class="padding">
-          <figure><img src="/assets/images/otrodron.jpg" alt="">img</figure>
-          <h3>Bose Sport Earbuds - Wireless Earphones - Bluetooth In Ear...</h3>
-          <div>2300€</div>
+        <article class="padding d-flex">
+          <figure><img src="/assets/images/otrodron.jpg" alt="Bose Sport Earbuds"></figure>
+          <h3 class="fs-base fw-600">Bose Sport Earbuds - Wireless Earphones - Bluetooth In Ear...</h3>
+          <div class="price">2300€</div>
         </article>
-        <article class="padding">
-          <figure><img src="/assets/images/iphone.jpg" alt=""></figure>
-          <h3>Simple Mobile 4G LTE Prepaid Smartphone</h3>
-          <div>220€ </div>
+        <article class="padding d-flex">
+          <figure><img src="/assets/images/iphone.jpg" alt="Simple Mobile 4G LTE"></figure>
+          <h3 class="fs-base fw-600">Simple Mobile 4G LTE Prepaid Smartphone</h3>
+          <div class="price">220€</div>
         </article>
-        <article class="padding">
-          <figure><img src="/assets/images/gamepad.jpg" alt=""></figure>
-          <h3>4K UHD LED Smart TV with Chromecast Built-in</h3>
-          <div>865€</div>
-          <div>15€</div>
+        <article class="padding d-flex">
+          <figure><img src="/assets/images/gamepad.jpg" alt="4K UHD LED Smart TV"></figure>
+          <h3 class="fs-base fw-600">4K UHD LED Smart TV with Chromecast Built-in</h3>
+          <div class="price d-flex">
+            <span class="before">865€</span>
+            <span>15€</span>
+          </div>
         </article>
-        <article class="padding">
-          <figure><img src="/assets/images/headphones.jpg" alt=""></figure>
-          <h3>Sony DSCHX8 High Zoom Point & Shoot Camera</h3>
-          <div>1200€</div>
+        <article class="padding d-flex">
+          <figure><img src="/assets/images/headphones.jpg" alt="Sony DSCHX8 High Zoom Point"></figure>
+          <h3 class="fs-base fw-600">Sony DSCHX8 High Zoom Point & Shoot Camera</h3>
+          <div class="price">1200€</div>
         </article>
-        <article class="padding">
-          <figure><img src="/assets/images/phone.jpg" alt=""></figure>
-          <h3>Dell Optiplex 7000x7480 All-in-One Computer Monitor</h3>
-          <div>299€</div>
+        <article class="padding d-flex">
+          <figure><img src="/assets/images/phone.jpg" alt="Dell Optiplex 7000x7480"></figure>
+          <h3 class="fs-base fw-600">Dell Optiplex 7000x7480 All-in-One Computer Monitor</h3>
+          <div class="price">299€</div>
         </article>
-        <article class="padding">
-          <figure><img src="/assets/images/dron.jpg" alt=""></figure>
-          <h3>Portable Wshing Machine, 11lbs capacity Model 18NMFIAM</h3>
-          <div>800€</div>
-          <div>70€</div>
+        <article class="padding d-flex">
+          <figure><img src="/assets/images/dron.jpg" alt="Portable Wshing Machine"></figure>
+          <h3 class="fs-base fw-600">Portable Wshing Machine, 11lbs capacity Model 18NMFIAM</h3>
+          <div class="price d-flex">
+            <span class="before">800€</span>
+            <span>70€</span>
+          </div>
         </article>
-        <article class="padding">
-          <figure><img src="/assets/images/imac.jpg" alt=""></figure>
-          <h3>2-Barrel Carburetor Carb 2100 Engine Increase Horsepower</h3>
-          <div>160€</div>
+        <article class="padding d-flex">
+          <figure><img src="/assets/images/imac.jpg" alt="2-Barrel Carburetor Carb 2100"></figure>
+          <h3 class="fs-base fw-600">2-Barrel Carburetor Carb 2100 Engine Increase Horsepower</h3>
+          <div class="price">160€</div>
         </article>
-        <article class="padding">
-          <figure><img src="/assets/images/cam.jpg" alt=""></figure>
-          <h3>JBL FLIP 4 - Waterproof Portable Bluetooth Speaker - Black</h3>
-          <div>360€</div>
-          <div>250€</div>
+        <article class="padding d-flex">
+          <figure><img src="/assets/images/cam.jpg" alt="JBL FLIP 4"></figure>
+          <h3 class="fs-base fw-600">JBL FLIP 4 - Waterproof Portable Bluetooth Speaker - Black</h3>
+          <div class="price d-flex">
+            <span class="before">360€</span>
+            <span>250€</span>
+          </div>
         </article>
       </div>
     </div>
@@ -321,8 +336,8 @@
 
 <section id="subscribe" class="ec-subscribe bg-blue white padding-y">
   <div class="ec-subscribe__wrapper padding-y">
-    <h2 class="fs-lg fw-400">Suscribete a nuestro boletin</h2>
-    <p class="padding-y fw-300">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero reprehenderit qui voluptate exercitationem incidunt quos soluta maxime animi corrupti facere voluptas culpa esse tempore nam, ipsum eum unde delectus cumque.</p>
+    <h2 class="fs-lg fw-300">Suscríbete a nuestro boletin</h2>
+    <p class="padding-y fw-100">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero reprehenderit qui voluptate exercitationem incidunt quos soluta maxime animi corrupti facere voluptas culpa esse tempore nam, ipsum eum unde delectus cumque.</p>
     <div class="d-flex bg-white padding margin-xl">
       <form action="">
         <input type="email" name="" id="" placeholder="Email">
@@ -338,7 +353,77 @@
     </div>
   </div>
 </section>
-<footer></footer>
+<footer class="bg-dark padding-xl">
+  <div class="ec-footer__wrapper d-flex gray padding-xl fw-100">
+    <div class="info">
+      <figure class="logo">
+        <img src="assets/images/logo_AS.svg" alt="Logotipo de Alberto Sancho" width="200" height="67">
+      </figure>
+      <address>
+        <p>Atención al cliente:</p>
+        <p class="phone white">+34 758 154 187</p>
+        <p>Avenida de los Cacharros, 34</p>
+        <p>28415 Madrid</p>
+        <p>ESPAÑA</p>
+      </address>
+    </div>
+    <div class="categorias">
+      <h3 class="fw-300 fs-base white uppercase">Categorias</h3>
+      <ul>
+        <li>Ordenadores y portátiles</li>
+        <li>Smartphones</li>
+        <li>Auriculares</li>
+        <li>Accesorios</li>
+        <li>Foto</li>
+        <li>TV</li>
+        <li class="warning">Ver todos los productos<i class="fa-solid fa-arrow-right fa-fw" aria-hidden="true"></i></li>
+      </ul>
+    </div>
+    <div class="enlaces">
+      <h3 class="fw-300 fs-base white uppercase">Accesos rápidos</h3>
+      <ul>
+        <li>Productos</li>
+        <li>Cesta de la compra</li>
+        <li>Favoritos</li>
+        <li>Comparar</li>
+        <li>Pedidos</li>
+        <li>FAQ</li>
+        <li>Sobre nosotros</li>
+      </ul>
+    </div>
+    <div class="apps">
+      <h3 class="fw-300 fs-base white uppercase">Apps</h3>
+      <span class="android d-flex bg-grey padding margin-y">
+        <i class="fa-brands fa-google-play"></i>
+        <p>Google Play</p>
+      </span>
+      <span class="ios d-flex bg-grey padding margin-y">
+        <i class="fa-brands fa-apple"></i>
+        <p>Apple Store</p>
+      </span>
+    </div>
+    <div class="tags">
+      <h3 class="fw-300 fs-base white uppercase">Etiquetas</h3>
+      <div class="tags__wrapper padding-y d-flex">
+        <div class="fs-sm fw-100"><a href="#">Juegos</a></div>
+        <div class="fs-sm fw-100"><a href="#">iPhone</a></div>
+        <div class="fs-sm fw-100"><a href="#">TV</a></div>
+        <div class="fs-sm fw-100"><a href="#">Asus</a></div>
+        <div class="fs-sm fw-100"><a href="#">Macbook</a></div>
+        <div class="fs-sm fw-100"><a href="#">SSD</a></div>
+        <div class="fs-sm fw-100 active"><a href="#">Tarjeta gráfica</a></div>
+        <div class="fs-sm fw-100"><a href="#">Power Bank</a></div>
+        <div class="fs-sm fw-100"><a href="#">Smart TV</a></div>
+        <div class="fs-sm fw-100"><a href="#">Rock</a></div>
+        <div class="fs-sm fw-100"><a href="#">Pop</a></div>
+        <div class="fs-sm fw-100"><a href="#">Altavoces</a></div>
+        <div class="fs-sm fw-100"><a href="#">Tablet</a></div>
+        <div class="fs-sm fw-100"><a href="#">Samsung</a></div>
+        <div class="fs-sm fw-100"><a href="#">Microondas</a></div>
+      </div>
+    </div>
+  </div>
+</footer>
 
 
 </body>
