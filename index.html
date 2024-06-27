@@ -86,10 +86,11 @@
           <span class="material-symbols-outlined">favorite</span>
           <span class="material-symbols-outlined">person</span>
         </div>
+        <a href="#" class="burger hidden"><i class="fa-solid fa-bars fa-lg white" aria-hidden="true"></i><span class="hidden">Menu</span></a>
       </div>
     </div>
   </header>
-  <div id="page" class="max-width">
+  <div id="page" class="ec-page max-width">
     <nav class="ec-main-nav d-flex padding-y">
       <form id="categories" class="ec-main-nav__nav fs-sm fw-600" action="/">
         <select name="categories">
@@ -134,12 +135,10 @@
               </ul>
             </nav>
           </div>
-          <div class="image padding-l">
-            <figure class="p-relative">
+          <figure class="image padding-l p-relative">
               <img src="/assets/images/xbox_360.png" alt="Xbox 360">
               <span class="price d-flex p-absolute bg-blue white padding-xl">299€</span>
-            </figure>
-          </div>
+          </figure>
         </article>
         <article class="ec-slider__2 bg-dark d-flex">
           <div class="text-wrapper d-flex padding-l">
@@ -147,19 +146,15 @@
             <h3 class="fw-400 white">Nuevo Google Pixel 6 Pro</h3>
             <button class="btn bg-orange white uppercase fs-sm">Compra ya <i class="fa-solid fa-arrow-right fa-fw" aria-hidden="true"></i></button>
           </div>
-          <div class="image d-flex p-relative">
+          <figure class="image d-flex p-relative">
             <span class="fs-sm fw-700 p-absolute bg-warning dark uppercase padding-xs">29% descuento</span>
-            <figure>
-              <img src="/assets/images/smartphone.png" alt="Smartphone">
-            </figure>
-          </div>
+            <img src="/assets/images/smartphone.png" alt="Smartphone">
+          </figure>
         </article>
         <article class="ec-slider__3 bg-grey d-flex">
-          <div class="image">
-            <figure>
+          <figure class="image">
               <img src="/assets/images/buds.png" alt="Auriculares">
-            </figure>
-          </div>
+          </figure>
           <div class="text-wrapper d-flex padding-l">
             <h3 class="fs-md">Xiaomi FlipsBuds Pro</h3>
             <h4 class="blue">199€</h4>
@@ -382,7 +377,7 @@
       <p class="padding-y fw-100">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero reprehenderit qui
         voluptate exercitationem incidunt quos soluta maxime animi corrupti facere voluptas culpa esse tempore nam,
         ipsum eum unde delectus cumque.</p>
-      <div class="d-flex bg-white padding margin-xl">
+      <div class="subscribe d-flex bg-white padding margin-xl">
         <form action="/">
           <input type="email" name="email" id="email" placeholder="Email">
         </form>
@@ -397,7 +392,7 @@
       </div>
     </div>
   </section>
-  <footer class="bg-dark padding-xl">
+  <footer class="ec-footer bg-dark padding-xl">
     <div class="ec-footer__wrapper d-flex gray padding-xl fw-100">
       <div class="info">
         <figure class="logo">

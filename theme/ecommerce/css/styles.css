@@ -21,7 +21,7 @@
 /* header */
 .content--up,
 .content--dw {
-  padding: var(--spacing) 0;
+  padding: var(--spacing) 1em;
 }
 .content--up__title {
   flex-grow: 1;
@@ -123,8 +123,6 @@
 .ec-slider .pager ul li a.active {
   background-color: var(--dark);
 }
-
-/* slide_1 */
 .ec-slider__1 .image figure {
   max-width: 300px;
 }
@@ -133,12 +131,12 @@
   border-radius: 100%;
   width: 70px;
   height: 70px;
-  top: 0;
-  right: 0;
+  top: 1em;
+  right: 1em;
 }
 .ec-slider__1 .pager {
   position: relative;
-  top:80px;
+  top: 1em;
 }
 .ec-slider__2 {
   align-items: center;
@@ -147,8 +145,8 @@
   align-self: self-end;
 }
 .ec-slider__2 .image span {
- top: -10px;
- right: 10px;
+ top: 5%;
+ right: 1em;
 }
 .ec-slider__2 figure {
   min-width: 200px;
@@ -160,7 +158,6 @@
 }
 
 /* deals */
-
 .ec-deals__header {
   align-items: baseline;
   gap: 30px;
@@ -215,6 +212,9 @@
   flex-grow: 1;
   justify-content: center;
   border-radius: 2px;
+}
+.ec-deals__deals article:hover {
+  border-color: var(--light-blue);
 }
 
 /* news */
@@ -307,4 +307,132 @@
   border-radius: 3px;
   color: var(--gray);
   border: 1px solid var(--gray);
+}
+
+
+/* responsive */
+/* ========== */
+@media (max-width: 992px) {
+  .ec-hd__promo--wrapper {
+    max-width: 80%;
+  }
+  .ec-main-nav ul {
+    display: none;
+  }
+  .ec-slider .image {
+    flex: 0 1 50%;
+    padding: 0;
+  }
+  .ec-deals__header {
+    flex-flow: row wrap;
+    gap: 20px;
+  }
+  .ec-deals__deals {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, minmax(200px, 1fr));
+  }
+  .ec-deals__deals article:last-child {
+    display: none;
+  }
+  .ec-news__wrapper {
+    flex-wrap: wrap;
+  }
+  .ec-news article {
+    flex-grow: 1;
+  }
+  .ec-news article img {
+    width: 100%;
+  }
+  .ec-footer__wrapper {
+    padding: 0;
+    flex-wrap: wrap;
+  }
+  .ec-footer__wrapper .tags {
+    display: none;
+  }
+}
+@media (max-width: 768px) {
+  .ec-hd {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 99999;
+    box-shadow: 0 1px 5px var(--grey);
+  }
+  .ec-hd__promo,
+  .ec-hd .content--up,
+  .ec-header__search,
+  .ec-header__icons,
+  .ec-main-nav {
+    display: none;
+  }
+  .ec-hd .burger {
+    display: block;
+  }
+  .ec-page {
+    margin-top: 70px;
+    padding: 1em;
+  }
+  .ec-slider {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 1fr);
+  }
+  .ec-slider article:nth-child(1) {
+    grid-row: 1 / 3;
+    grid-column: auto;
+  }
+  .ec-slider article:nth-child(2) {
+    grid-row: 3 / 4;
+  }
+  .ec-slider article:nth-child(3) {
+    grid-row: 4 / 5;
+  }
+  .ec-slider article .image figure {
+    max-width: 70%;
+    margin: auto;
+  }
+  .ec-slider__2 .text-wrapper,
+  .ec-slider__3 .text-wrapper {
+    flex-grow: 1;
+  }
+  .ec-slider__2 .image,
+  .ec-slider__3 .image {
+    flex: 0 1 30%;
+  }
+  .ec-benefits {
+    display: none;
+  }
+  .ec-footer__wrapper .enlaces {
+    display: none;
+  }
+}
+
+@media (max-width: 576px) {
+  .ec-footer .categorias,
+  .ec-footer .apps   {
+    display:none;
+  }
+  .ec-deals__deals {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .ec-subscribe__wrapper {
+    max-width: 80%;
+    margin: 0 auto;
+  }
+  .ec-subscribe .subscribe {
+    margin: 1em 0
+  }
+  .ec-subscribe .brands {
+    width: 100%;
+}
+  .ec-footer__wrapper {
+    flex-flow: row wrap;
+  }
+  .ec-footer__wrapper .info {
+    flex: 0 1 100%;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 1em;
+  }
 }

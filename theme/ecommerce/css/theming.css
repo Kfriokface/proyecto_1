@@ -37,11 +37,15 @@ input:focus-visible {
 a {
   text-decoration: none;
 }
+button {
+  cursor: pointer;
+}
 
 /* layout */
 .max-width {
   max-width: var(--max-width);
   margin: 0 auto;
+  padding: 0 1em;
 }
 
 /* display */
@@ -300,7 +304,6 @@ a {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: var(--fs-base);
   gap: 10px;
 }
 .btn2 {
